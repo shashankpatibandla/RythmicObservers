@@ -1,4 +1,4 @@
-# RythmicObservers
+# RythmicObservers Work Plan
 
 #### Research Questions – 
 
