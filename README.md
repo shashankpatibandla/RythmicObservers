@@ -30,4 +30,4 @@ _09/10/2018 – 11/21/2018_
 3. Soil Conditions
 
 
-Please click [here] for the LICENCE Information (https://github.com/shashankpatibandla/RythmicObservers/blob/master/LICENSE)
+Please click [here](https://github.com/shashankpatibandla/RythmicObservers/blob/master/LICENSE) for the LICENCE Information 
