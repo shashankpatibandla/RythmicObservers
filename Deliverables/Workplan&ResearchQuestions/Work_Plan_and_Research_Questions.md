@@ -5,6 +5,11 @@
 1. How __**different species**__ of Oak Tree respond to different **climatic conditions** [we are planning to observe its effects on leafing, budding and flowering process in oak trees]. 
 2. Find out when __**Leaf size**__ is maximum or minimum for different species **throughout the year** and what other data corelates with it.
 3. Provided with **weather, soil and seasonal conditions**, we shall be analysing _much more in detail_.
+4. In which year (2017 vs 2018) there was the highest number of buds?
+5. Is there any difference in a number of buds, flowers, and fruits in 2017 vs 2018? 
+6. How does budding correlate with flowering/leafing?
+7. How does leaf falling correlates with weather/climate?
+8. Does the time of budding impact the leafing and flowering time?
 
 ##### **Background Research** 
 Areas:- 
