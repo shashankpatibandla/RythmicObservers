@@ -60,7 +60,7 @@ _**[we will be adding tasks if needed as we go]**_
 
 **Timeline for the project**
 _09/10/2018 – 11/21/2018_
-*For Detailed project timelines please check our gantt chart [here](https://github.com/shashankpatibandla/RythmicObservers/blob/master/Deliverables/Workplan%26ResearchQuestions/Gantt%20chart-8086.pdf)
+* For Detailed project timelines please check our gantt chart [here](https://github.com/shashankpatibandla/RythmicObservers/blob/master/Deliverables/Workplan%26ResearchQuestions/Gantt%20chart-8086.pdf)
 
 ##### __**Some Questions we have for Clients**__
 1. Age data of trees
