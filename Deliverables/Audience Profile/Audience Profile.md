@@ -68,6 +68,6 @@ Global Tree Conservation. Prevent extinction and secure the trees that are most 
 2. Goutam - Worked on the 'Organization' and majority of 'Organization and Individual' part of this assignment
 3. Shashank - Worked on 'Individual and Organization' and proofread the document
 
-#### Proofread by - Shashank
+#### Proofread by - Shashank Patibandla on 10/09/2018 
 
 
