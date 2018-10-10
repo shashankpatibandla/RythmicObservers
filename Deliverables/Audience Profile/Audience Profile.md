@@ -23,7 +23,7 @@ Dr. Rollinson started working at the Arboretum as a forest ecologist from Jan 20
  
 ## Organizational (Morton Arboretum)
 #### Sector 
-* Morton Arboretum is a non-profit organization founded in 1922 by Joy Morton 
+Morton Arboretum is a non-profit organization founded in 1922 by Joy Morton 
  
 #### Mission
 According to the Arboretum website, their mission is to:
