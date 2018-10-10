@@ -12,9 +12,9 @@ Dr. Rollinson started working at the Arboretum as a forest ecologist from Jan 20
  
 #### Education level & background
  
-* Doctor of Philosophy (Ph.D.), Ecology from Penn State University
-* Master of Science (MS), Ecology from Penn State University
-* Bachelors of Arts (BA), Biology, Environmental studies from Oberlin College
+* Doctor of Philosophy (Ph.D.) in  Ecology from Penn State University
+* Master of Science (MS) in Ecology from Penn State University
+* Bachelors of Arts (BA) in Biology, Environmental studies from Oberlin College
  
 #### Interests & focus
  * She is interested in how the interactions among climate, disturbance and other plants determine species and ecosystem distribution across time. 
@@ -22,7 +22,7 @@ Dr. Rollinson started working at the Arboretum as a forest ecologist from Jan 20
  * She combines data from observations and experiments with statistical and process-based models to understand how and why forests change in time.
  
 ## Organizational (Morton Arboretum)
-##### Sector 
+#### Sector 
 * Morton Arboretum is a non-profit organization founded in 1922 by Joy Morton 
  
 #### Mission
@@ -37,7 +37,7 @@ As stated in their website, the goal of the organization is to "encourage the pl
 #### Stakeholders (who/what they serve/support)
 Some of the stakeholders of the work done in Morton Arboretum are 
 
-Members of the Arboretum , Volunteers working in the Arboretum , Donors, Trustees and Advisors
+Members of the Arboretum , Volunteers working in the Arboretum , Donors, Trustees and Advisors, Local communities
   
 ## Both individual & organizational
 #### Data capabilities (maturity/literacy)
@@ -65,9 +65,9 @@ Global Tree Conservation. Prevent extinction and secure the trees that are most 
 
 #### Contributorship Statement - 
 1. Sujana - Worked on the 'Individual' part of this assignment
-2. Goutam - Worked on the 'Organisation' and majority of 'Organization and Individual' part of this assignment
+2. Goutam - Worked on the 'Organization' and majority of 'Organization and Individual' part of this assignment
 3. Shashank - Worked on 'Individual and Organization' and proofread the document
 
-#### Proofread by - 
+#### Proofread by - Shashank
 
 
