@@ -3,7 +3,7 @@
 ### Description of the data source 
 We received the data from one of the staff from the Morton Arboretum, Dr. Christine Rollinson. The data we received has three files: one is the metadata, the other two are data for the year 2017 and 2018. The data is about the ongoing project: Phenology of Oaks from Around the World. The data has 31 columns that contain the budding, leafing, flowering, and acorn/ fruit process.  
 
-### Specifically identify any intellectual policy constraints, or lack thereof (licensing). 
+### Any intellectual policy constraints, or lack thereof (licensing). 
 
 ### Description of the metadata
 The project was started in March 2017 and is an ongoing process. The metadata contains a spreadsheet that describes the other two excel sheet (data for 2017 and 2018) that was provided. The spreadsheet describes what each column is, description of what is included in each column and clarification of the units that were provided. The provided spreadsheet clearly summarized what this project/research is all about and their data collection method. The brief description that was provided for each column was helpful for us to understand what each column meant. 
@@ -60,7 +60,7 @@ fruit_ripe_intensity: 2847 ‘NA’
 fruit_drop_observed: 37 ‘did not look’, 18 ‘?’and 29 ‘NA’  
 fruit_drop_intensity: 2867 ‘NA’  
 
-### Description of your rationale for the steps you’re taking to remediate data. For example, if you need to fill in empty fields, specify what value you chose and why.  
+### Description of your rationale for the steps you’re taking to remediate data. 
 10-Mar was actually the range from 3-10, so we changed all ‘10-Mar’ to 3-10   
 
 There are ‘?’ in some places. If there is note we kept is as it is. We deleted the ones that do not have notes    
@@ -68,13 +68,13 @@ There are ‘?’ in some places. If there is note we kept is as it is. We delet
 In the columns “observed”, there is a binary question: Y or N. If there is Y then the value is assigned accordingly for the “intensity” column.  If it is N then the value would be 0 in “intensity” column.  We added ‘0’ on intensity column if the observed column has N.  
 
 
-### A script or step-by-step textual description (or a combination) that documents your data cleaning process with enough detail for replication.
+### Data cleaning process 
 
 
 ### A contributorship statement.  
 1. Sujana - Worked on the issue and the rational to solve the issue part of this assignment  
 2. Goutam - Worked on the description od data and metadata part of this assignment  
-3. Shashank - Worked on textual description  
+3. Shashank - Worked on data cleaning process  
 
 Proofread by - Shashank Patibandla on 10/16/2018
 
