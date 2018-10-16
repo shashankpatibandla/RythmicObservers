@@ -10,7 +10,7 @@ The project was started in March 2017 and is an ongoing process. The metadata co
 
 ### Issues with the data
 The 2018 data is not complete: data from 2017 is from March-Dec. But we only have data from March to August for 2018. The data we received is good overall, but there were some issues that we encountered. The issues we encountered in each year's data are as follows:   
-####2017  
+#### 2017  
 Leaf_breaking_bud_observed: 10 missing value.   
 Leaf_breaking_bud_intensity: few values were as 10-March instead of count estimate. And most of the values were missing  
 Leaf_observed: 40 missing values  
@@ -35,7 +35,7 @@ fruit_ripe_intensity: 611 blanks (only 173 has notes)
 fruit_drop_observed: 17 blank and 6 “?” only three has notes  
 fruit_drop_intensity: 568 blank and 71 has ‘10-Mar’  
 	
-####2018  
+#### 2018  
 In 2018 there are few new units in each column like there is “did not look” and “NA” but there is only “Yes” “No” “blank” and “?’ in the 2017 data and in the metadata. And there is also no notes in the 2018 data so there is no way to know the reason behind the missing data or why the did not look. There is NA instead of blank in the 2018 data.   
 Leaf_breaking_bud_observed: 30 ‘did not look’, and 21 ‘?’  
 Leaf_breaking_bud_intensity: 2627 ‘NA’ and two ‘10-Mar’  
