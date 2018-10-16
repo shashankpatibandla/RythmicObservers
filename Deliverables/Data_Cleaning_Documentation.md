@@ -14,8 +14,7 @@ The 2018 data is not complete: data from 2017 is from March-Dec. But we only hav
 Leaf_breaking_bud_observed: 10 missing value.   
 Leaf_breaking_bud_intensity: few values were as 10-March instead of count estimate. And most of the values were missing  
 Leaf_observed: 40 missing values  
-Leaf_intensity: 686 blank  
-There is 10-March on the column Leaf breaking bud intensity.   
+Leaf_intensity: 686 blank   
 Leaf_increasing_size observed: 12 missing field  
 Leaf_increasing_size intensity: 1954 missing field  
 leaf_color_observed: 43 blanks and one ‘?’ (does have a note for ?)  
@@ -36,7 +35,7 @@ fruit_drop_observed: 17 blank and 6 “?” only three has notes
 fruit_drop_intensity: 568 blank and 71 has ‘10-Mar’  
 	
 #### 2018  
-In 2018 there are few new units in each column like there is “did not look” and “NA” but there is only “Yes” “No” “blank” and “?’ in the 2017 data and in the metadata. And there is also no notes in the 2018 data so there is no way to know the reason behind the missing data or why the did not look. There is NA instead of blank in the 2018 data.   
+In 2018 there are few new units in each column like there is “did not look” and “NA” but there is only “Yes” “No” “blank” and “?’ in the 2017 data and in the metadata. And there is also no notes in the 2018 data so there is no way to know the reason behind the missing data or why the did not look. There is NA instead of blank in the 2018 data.     
 Leaf_breaking_bud_observed: 30 ‘did not look’, and 21 ‘?’  
 Leaf_breaking_bud_intensity: 2627 ‘NA’ and two ‘10-Mar’  
 Leaf_observed: 20 did not look,  25 ‘?’ and 28 “NA”  
@@ -61,15 +60,20 @@ fruit_drop_observed: 37 ‘did not look’, 18 ‘?’and 29 ‘NA’
 fruit_drop_intensity: 2867 ‘NA’  
 
 ### Description of your rationale for the steps you’re taking to remediate data. For example, if you need to fill in empty fields, specify what value you chose and why.  
-10-Mar was actually the range from 3-10, so we changed all ‘10-Mar’ to 3-10.   
-There are ‘?’ in some places. If there is note we kept is as it is. We deleted the ones that do not have notes.   
+10-Mar was actually the range from 3-10, so we changed all ‘10-Mar’ to 3-10.     
+There are ‘?’ in some places. If there is note we kept is as it is. We deleted the ones that do not have notes.     
 In the columns “observed”, there is a binary question: Y or N. If there is Y then the value is assigned accordingly for the “intensity” column.  If it is N then the value would be 0 in “intensity” column.  We added ‘0’ on intensity column if the observed column has N.  
 
 
- ### A script or step-by-step textual description (or a combination) that documents your data cleaning process with enough detail for replication.  
+### A script or step-by-step textual description (or a combination) that documents your data cleaning process with enough detail for replication.
 
 
- ### A contributorship statement. 
+### A contributorship statement.  
+1. Sujana - Worked on the issue and the rational to solve the issue part of this assignment  
+2. Goutam - Worked on the description od data and metadata part of this assignment  
+3. Shashank - Worked on textual description  
+
+Proofread by - Shashank Patibandla on 10/16/2018
 
 
 
