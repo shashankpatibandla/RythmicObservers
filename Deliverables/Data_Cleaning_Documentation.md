@@ -1,7 +1,36 @@
 # Data Cleaning & Documentation 
 ## Morton Arboretum 
 ### Description of the data source 
-We received the data from one of the staff from the Morton Arboretum, Dr. Christine Rollinson. The data we received has three files: one is the metadata, the other two are data for the year 2017 and 2018. The data is about the ongoing project: Phenology of Oaks from Around the World. The data has 31 columns that contain the budding, leafing, flowering, and acorn/ fruit process.  
+We received the data from one of the staff at the Morton Arboretum, Dr. Christine Rollinson. The data we received had three files:   
+ - Metadata of the dataset  
+ - Oak Trees data collection for the year 2017  
+ - Oak Trees data collection for the year 2018  
+  
+The dataset has information about the Oak tree Collection from around the world. The idea in here is to observe all the different trees on how do they respond to the climatic conditions at the Arboretum.  
+
+The dataset has 32 columns and around 3000 observations for each year. We are highlighting the important columns below.
+ - Genus  
+ - Species  
+ - date_observed  
+ - id (uniquely identifies a tree)  
+ - Data about leaves such as  
+ 	- Leaf_breaking_bud_observed
+	- Leaf_breaking_bud_intensity
+	- Leaf_size_increased
+ 	- Leaf_color_observed
+	- Leaf_color_intensity
+	- Leaf_Falling_Observed
+  - Data about Flowers	
+  - Data about Fruits
+  
+With the data, we have, we will be able to do a research and identify how different species respond to the climatic conditions. Provided the data about the native behaviour of all those species, our team will be able to provide more insight into this topic but that is out of scope as of now.
+  
+  
+        
+
+
+
+
 
 ### Any intellectual policy constraints, or lack thereof (licensing). 
 
