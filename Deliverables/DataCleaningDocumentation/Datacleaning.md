@@ -6,12 +6,12 @@ Shashank Patibandla
 -   [Data Cleaning & Documentation](#data-cleaning-documentation)
     -   [Morton Arboretum](#morton-arboretum)
         -   [Description of the data source](#description-of-the-data-source)
-        -   [Any intellectual policy constraints, or lack thereof (licensing).](#any-intellectual-policy-constraints-or-lack-thereof-licensing.)
+        -   [Any intellectual policy constraints, or lack thereof (licensing)](#any-intellectual-policy-constraints-or-lack-thereof-licensing.)
         -   [Description of the metadata](#description-of-the-metadata)
         -   [Issues with the data](#issues-with-the-data)
-        -   [Description of your rationale for the steps you???re taking to remediate data.](#description-of-your-rationale-for-the-steps-youre-taking-to-remediate-data.)
+        -   [Description of your rationale for the steps you???re taking to remediate data](#description-of-your-rationale-for-the-steps-youre-taking-to-remediate-data.)
         -   [Data cleaning process](#data-cleaning-process)
-        -   [A contributorship statement.](#a-contributorship-statement.)
+        -   [A contributorship statement](#a-contributorship-statement.)
 
 Data Cleaning & Documentation
 =============================
@@ -28,12 +28,19 @@ We received the data from one of the staff at the Morton Arboretum, Dr. Christin
 
 The dataset has information about the Oak tree Collection from around the world. The idea in here is to observe all the different trees on how do they respond to the climatic conditions at the Arboretum.
 
-The dataset has 32 columns and around 3000 observations for each year. We are highlighting the important columns below: - Genus
+The dataset has 32 columns and around 3000 observations for each year. We are highlighting the important columns below: 
+- Genus
 - Species
 - date\_observed
 - id (uniquely identifies a tree)
 - Data about leaves such as
-- Leaf\_breaking\_bud\_observed - Leaf\_breaking\_bud\_intensity - Leaf\_size\_increased - Leaf\_color\_observed - Leaf\_color\_intensity - Leaf\_Falling\_Observed - Data about Flowers
+- Leaf\_breaking\_bud\_observed 
+    - Leaf\_breaking\_bud\_intensity 
+    - Leaf\_size\_increased 
+    - Leaf\_color\_observed 
+    - Leaf\_color\_intensity 
+    - Leaf\_Falling\_Observed 
+    - Data about Flowers
 - Data about Fruits (acorns)
 
 With the data, we have, we will be able to do a research and identify how different species respond to the climatic conditions. Provided the data about the native behaviour of all those species, our team will be able to provide more insight into this topic but that is out of scope as of now.
@@ -42,68 +49,94 @@ With the data, we have, we will be able to do a research and identify how differ
 
 The dataset was provided by our client and we did not look for any external sources for data, because of which it will be covered by the Licensing terms and conditions of Morton Arboretum. We are using the data with the consent of the client which is Morton Arboretum.
 
-For Licensing terms and conditions of Morton Arboretum [Click Here](http://www.mortonarb.org/visit-explore/about-arboretum/terms-and-conditions)
+For Licensing terms and conditions of Morton Arboretum [Click Here](http://www.mortonarb.org/visit-explore/about-arboretum/terms-and-conditions)  
 Adding to that, our team will update the licensing terms upon referring the data from any external source.
 
 ### Description of the metadata
 
-The project was started in March 2017 and is an ongoing process. The metadata contains a spreadsheet that describes the other two excel sheet (data for 2017 and 2018) that was provided. The spreadsheet describes what each column is, description of what is included in each column and clarification of the units that were provided. The provided spreadsheet clearly summarized what this project/research is all about and their data collection method. The brief description that was provided for each column was helpful for us to understand what each column meant.
+The project was started in March 2017 and is an ongoing process. The metadata contains a spreadsheet that describes the other two excel sheet (data for 2017 and 2018) that was provided. The spreadsheet describes what each column is, description of what is included in each column and clarification of the units that were provided. The provided spreadsheet clearly summarized what this project/research is all about and their data collection method. The brief description that was provided for each column was helpful for us to understand what each column meant.  
 
+We have around 40 different species of Oak as a part of our study. Each species has its native from somewhere around the world. Only unique thing about all the species is that they belong to the same Genus “Quercus”.  
+
+Metadata about the dataset helped us to clarify couple of things stated below:
+- Do we need additional information to proceed further with the research? Yes, 
+    - If yes, What Data?
+        - Climatic data and Soil Conditions
+    - Did we get that?
+        - Yes
+    - Where did you get the soil conditions data?
+        - Morton Arboretum Website
+    - What about the license?
+        - As stated in point 2, we are working on the dataset with the consent of the client.  
+        
+ - Are the values defined for the columns are valid?  
+    - If Yes, what percent of data are valid?
+        - 90%
+    - What about the rest? Did we keep them or remove them?
+        - We had cleaned the data and kept them.  
+        
+ - Can there be an enhancement in the future to this research by getting additional information about the Oak trees.?
+      - Yes/No
+          - Yes
+      - How?
+            - Getting to know of the native behaviour of each species will help us analyze it better.
+       
+      
 ### Issues with the data
 
 The 2018 data is not complete: data from 2017 is from March-Dec. But we only have data from March to August for 2018. The data we received is good overall, but there were some issues that we encountered. The issues we encountered in each year's data are as follows:
 
 #### 2017
 
-Leaf\_breaking\_bud\_observed: 10 missing value.
-Leaf\_breaking\_bud\_intensity: few values were as 10-March instead of count estimate. And most of the values were missing
-Leaf\_observed: 40 missing values
-Leaf\_intensity: 686 blank
-Leaf\_increasing\_size observed: 12 missing field
-Leaf\_increasing\_size intensity: 1954 missing field
-leaf\_color\_observed: 43 blanks and one - ? (does have a note for ?)
-leaf\_color\_intensity: 233 blank.
-leaf\_falling observed: 45 blank and 5 - ? (no notes)
-leaf\_falling\_intensity: mentioned in metadata but cannot find this column
-flower\_buds\_observed: 13 blanks and two - ? (note for only one)
-flower\_buds\_intensity: 722 blank and 10 - 10-mar
-flower\_open\_observed: 13 blank and one - ? (does have note for ???????)
-flower\_open\_intensity: 741 blank
-flower\_pollen\_release\_observed: 14 blank and 177 - ? and only 7 has notes
-flower\_pollen\_release\_intensity: 157 blank and notes on only 22
-fruit\_observed: 16 blank and 16 - ? and only 2 has notes
-fruit\_intensity: 626 blank and 71 has 10-mar
-fruit\_ripe \_observed: 21 blank and 6 - ? only three has notes
-fruit\_ripe\_intensity: 611 blanks (only 173 has notes)
-fruit\_drop\_observed: 17 blank and 6 ? only three has notes
-fruit\_drop\_intensity: 568 blank and 71 has 10-Mar
+Leaf\_breaking\_bud\_observed: 10 missing value  
+Leaf\_breaking\_bud\_intensity: few values were as 10-March instead of count estimate. And most of the values were missing  
+Leaf\_observed: 40 missing values  
+Leaf\_intensity: 686 blank  
+Leaf\_increasing\_size observed: 12 missing field  
+Leaf\_increasing\_size intensity: 1954 missing field  
+leaf\_color\_observed: 43 blanks and one - ? (does have a note for ?)  
+leaf\_color\_intensity: 233 blank  
+leaf\_falling observed: 45 blank and 5 - ? (no notes)  
+leaf\_falling\_intensity: mentioned in metadata but cannot find this column  
+flower\_buds\_observed: 13 blanks and two - ? (note for only one)  
+flower\_buds\_intensity: 722 blank and 10 - 10-mar  
+flower\_open\_observed: 13 blank and one - ? (does have note for ???????)  
+flower\_open\_intensity: 741 blank  
+flower\_pollen\_release\_observed: 14 blank and 177 - ? and only 7 has notes  
+flower\_pollen\_release\_intensity: 157 blank and notes on only 22  
+fruit\_observed: 16 blank and 16 - ? and only 2 has notes  
+fruit\_intensity: 626 blank and 71 has 10-mar  
+fruit\_ripe \_observed: 21 blank and 6 - ? only three has notes  
+fruit\_ripe\_intensity: 611 blanks (only 173 has notes)  
+fruit\_drop\_observed: 17 blank and 6 ? only three has notes  
+fruit\_drop\_intensity: 568 blank and 71 has 10-Mar  
 
 #### 2018
 
-In 2018 there are few new units in each column like there is did not look and NA but there is only Yes No blank and ? in the 2017 data and in the metadata. And there is also no notes in the 2018 data so there is no way to know the reason behind the missing data or why the did not look. There is NA instead of blank in the 2018 data.
+In 2018 there are few new units in each column like there is did not look and NA but there is only Yes No blank and ? in the 2017 data and in the metadata. And there is also no notes in the 2018 data so there is no way to know the reason behind the missing data or why the did not look. There is NA instead of blank in the 2018 data.  
 
-Leaf\_breaking\_bud\_observed: 30 - did not look, and 21 - ?
-Leaf\_breaking\_bud\_intensity: 2627 - NA and two 10-Mar
-Leaf\_observed: 20 - did not look, 25 - ? and 28 - NA
-Leaf\_intensity: 1684 - NA
-Leaf\_increasing\_size observed: 30 - did not look, 42 - ? and 29 - NA
-Leaf\_increasing\_size intensity: 2493 - NA
-leaf\_color\_observed: 67 - did not look, 21 - ? and 29 - NA
-leaf\_color\_intensity: 2819 - NA
-leaf\_falling observed: 67 - did not look, 14 - ? and 29 - NA
-leaf\_falling\_intensity: mentioned in metadata but cannot find this column
-flower\_buds\_observed: 27 - did not look, 24 - ?and 29 - NA
-flower\_buds\_intensity: 2642 - NA and 6 - 10-Mar
-flower\_open\_observed: 60 - did not look, 38 - ? and 29 - NA
-flower\_open\_intensity: 2725 - NA
-flower\_pollen\_release\_observed: 74 - did not look, 48 - ? and 29 - NA
-flower\_pollen\_release\_intensity: have totally different units : little, lots, NA, none ,some
-fruit\_observed: 21 - did not look, 96 - ? and 29 - NA
-fruit\_intensity: 3212 - NA
-fruit\_ripe \_observed: 21 - did not look, 21 - ? and 29 - NA
-fruit\_ripe\_intensity: 2847 - NA
-fruit\_drop\_observed: 37 - did not look, 18 - ? and 29 - NA
-fruit\_drop\_intensity: 2867 - NA
+Leaf\_breaking\_bud\_observed: 30 - did not look, and 21 - ?  
+Leaf\_breaking\_bud\_intensity: 2627 - NA and two 10-Mar  
+Leaf\_observed: 20 - did not look, 25 - ? and 28 - NA  
+Leaf\_intensity: 1684 - NA  
+Leaf\_increasing\_size observed: 30 - did not look, 42 - ? and 29 - NA  
+Leaf\_increasing\_size intensity: 2493 - NA  
+leaf\_color\_observed: 67 - did not look, 21 - ? and 29 - NA  
+leaf\_color\_intensity: 2819 - NA  
+leaf\_falling observed: 67 - did not look, 14 - ? and 29 - NA  
+leaf\_falling\_intensity: mentioned in metadata but cannot find this column  
+flower\_buds\_observed: 27 - did not look, 24 - ?and 29 - NA  
+flower\_buds\_intensity: 2642 - NA and 6 - 10-Mar  
+flower\_open\_observed: 60 - did not look, 38 - ? and 29 - NA  
+flower\_open\_intensity: 2725 - NA  
+flower\_pollen\_release\_observed: 74 - did not look, 48 - ? and 29 - NA  
+flower\_pollen\_release\_intensity: have totally different units : little, lots, NA, none ,some  
+fruit\_observed: 21 - did not look, 96 - ? and 29 - NA  
+fruit\_intensity: 3212 - NA  
+fruit\_ripe \_observed: 21 - did not look, 21 - ? and 29 - NA  
+fruit\_ripe\_intensity: 2847 - NA  
+fruit\_drop\_observed: 37 - did not look, 18 - ? and 29 - NA  
+fruit\_drop\_intensity: 2867 - NA  
 
 ### Description of your rationale for the steps you???re taking to remediate data.
 
@@ -323,6 +356,7 @@ Now we have a excel sheet for 2017 cleaned data and 2018 cleaned data. The 2017 
 <p>
 we need to futher clean some of the values like n/a or anomolies. As we know cleaning of data is a evergoing process.
 </p>
+
 ### A contributorship statement.
 
 1.  Sujana - Worked on the issue and the rational to solve the issue part of this assignment
