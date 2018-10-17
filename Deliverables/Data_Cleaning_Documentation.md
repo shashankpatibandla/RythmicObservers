@@ -21,7 +21,8 @@ The dataset has 32 columns and around 3000 observations for each year. We are hi
 	- Leaf_color_intensity
 	- Leaf_Falling_Observed
   - Data about Flowers	
-  - Data about Fruits
+  - Data about Fruits (acorns)
+
   
 With the data, we have, we will be able to do a research and identify how different species respond to the climatic conditions. Provided the data about the native behaviour of all those species, our team will be able to provide more insight into this topic but that is out of scope as of now.
   
@@ -102,7 +103,7 @@ In the columns “observed”, there is a binary question: Y or N. If there is Y
 
 ### A contributorship statement.  
 1. Sujana - Worked on the issue and the rational to solve the issue part of this assignment  
-2. Goutam - Worked on the description od data and metadata part of this assignment  
+2. Goutam - Worked on the description of data and metadata part of this assignment  
 3. Shashank - Worked on data cleaning process  
 
 Proofread by - Shashank Patibandla on 10/16/2018
