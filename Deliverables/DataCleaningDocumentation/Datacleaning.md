@@ -79,7 +79,7 @@ Metadata about the dataset helped us to clarify couple of things stated below:
       - Yes/No
           - Yes
       - How?
-            - Getting to know of the native behaviour of each species will help us analyze it better.
+           - Getting to know of the native behaviour of each species will help us analyze it better.
        
       
 ### Issues with the data
