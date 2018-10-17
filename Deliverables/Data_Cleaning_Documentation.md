@@ -25,15 +25,13 @@ The dataset has 32 columns and around 3000 observations for each year. We are hi
 
   
 With the data, we have, we will be able to do a research and identify how different species respond to the climatic conditions. Provided the data about the native behaviour of all those species, our team will be able to provide more insight into this topic but that is out of scope as of now.
-  
-  
-        
-
-
-
-
-
+ 
 ### Any intellectual policy constraints, or lack thereof (licensing). 
+The dataset was provided by our client and we did not look for any external sources for data, because of which it will be covered by the Licensing terms and conditions of Morton Arboretum. We are using the data with the consent of the client which is Morton Arboretum.  
+
+For Licensing terms and conditions of Morton Arboretum [Click Here](http://www.mortonarb.org/visit-explore/about-arboretum/terms-and-conditions)   
+Adding to that, our team will update the licensing terms upon referring the data from any external source. 
+
 
 ### Description of the metadata
 The project was started in March 2017 and is an ongoing process. The metadata contains a spreadsheet that describes the other two excel sheet (data for 2017 and 2018) that was provided. The spreadsheet describes what each column is, description of what is included in each column and clarification of the units that were provided. The provided spreadsheet clearly summarized what this project/research is all about and their data collection method. The brief description that was provided for each column was helpful for us to understand what each column meant. 
