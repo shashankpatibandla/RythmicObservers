@@ -8,7 +8,7 @@ We received the data from one of the staff at the Morton Arboretum, Dr. Christin
   
 The dataset has information about the Oak tree Collection from around the world. The idea in here is to observe all the different trees on how do they respond to the climatic conditions at the Arboretum.  
 
-The dataset has 32 columns and around 3000 observations for each year. We are highlighting the important columns below.
+The dataset has 32 columns and around 3000 observations for each year. We are highlighting the important columns below:
  - Genus  
  - Species  
  - date_observed  
