@@ -6,12 +6,12 @@ Shashank Patibandla
 -   [Data Cleaning & Documentation](#data-cleaning-documentation)
     -   [Morton Arboretum](#morton-arboretum)
         -   [Description of the data source](#description-of-the-data-source)
-        -   [Any intellectual policy constraints, or lack thereof (licensing)](#any-intellectual-policy-constraints-or-lack-thereof-licensing.)
+        -   [Any intellectual policy constraints, or lack thereof (licensing)](#any-intellectual-policy-constraints-or-lack-thereof-licensing)
         -   [Description of the metadata](#description-of-the-metadata)
         -   [Issues with the data](#issues-with-the-data)
-        -   [Description of your rationale for the steps you???re taking to remediate data](#description-of-your-rationale-for-the-steps-youre-taking-to-remediate-data.)
+        -   [Description of your rationale for the steps you???re taking to remediate data](#description-of-your-rationale-for-the-steps-youre-taking-to-remediate-data)
         -   [Data cleaning process](#data-cleaning-process)
-        -   [A contributorship statement](#a-contributorship-statement.)
+        -   [A contributorship statement](#a-contributorship-statement)
 
 Data Cleaning & Documentation
 =============================
