@@ -309,6 +309,7 @@ Step 3. If the "Notes.Observer" field is not filled, remove the whole row which 
 <td>
 Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf.breaking.bud.observed", "leaf.observed", "leaf.increasing.size.observed", "leaf.falling.observed", "flower.buds.observed", "flower.open.observed", "fruit.observed", "fruit.ripe.observed" and "fruit.drop.observed" 
 </td> <br>
+
 #### Saving the cleaned rows .csv file
 
 <p>
