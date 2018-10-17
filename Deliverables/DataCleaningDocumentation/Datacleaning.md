@@ -31,15 +31,15 @@ The dataset has information about the Oak tree Collection from around the world.
 The dataset has 32 columns and around 3000 observations for each year. We are highlighting the important columns below: 
 - Genus
 - Species
-- date\_observed
+- date_observed
 - id (uniquely identifies a tree)
 - Data about leaves such as
-- Leaf\_breaking\_bud\_observed 
-    - Leaf\_breaking\_bud\_intensity 
-    - Leaf\_size\_increased 
-    - Leaf\_color\_observed 
-    - Leaf\_color\_intensity 
-    - Leaf\_Falling\_Observed 
+- Leaf_breaking_bud_observed 
+    - Leaf_breaking_bud_intensity 
+    - Leaf_size_increased 
+    - Leaf_color_observed 
+    - Leaf_color_intensity 
+    - Leaf_Falling_Observed 
     - Data about Flowers
 - Data about Fruits (acorns)
 
@@ -88,55 +88,55 @@ The 2018 data is not complete: data from 2017 is from March-Dec. But we only hav
 
 #### 2017
 
-Leaf\_breaking\_bud\_observed: 10 missing value  
-Leaf\_breaking\_bud\_intensity: few values were as 10-March instead of count estimate. And most of the values were missing  
-Leaf\_observed: 40 missing values  
-Leaf\_intensity: 686 blank  
-Leaf\_increasing\_size observed: 12 missing field  
-Leaf\_increasing\_size intensity: 1954 missing field  
-leaf\_color\_observed: 43 blanks and one - ? (does have a note for ?)  
-leaf\_color\_intensity: 233 blank  
-leaf\_falling observed: 45 blank and 5 - ? (no notes)  
-leaf\_falling\_intensity: mentioned in metadata but cannot find this column  
-flower\_buds\_observed: 13 blanks and two - ? (note for only one)  
-flower\_buds\_intensity: 722 blank and 10 - 10-mar  
-flower\_open\_observed: 13 blank and one - ? (does have note for ?)  
-flower\_open\_intensity: 741 blank  
-flower\_pollen\_release\_observed: 14 blank and 177 - ? and only 7 has notes  
-flower\_pollen\_release\_intensity: 157 blank and notes on only 22  
-fruit\_observed: 16 blank and 16 - ? and only 2 has notes  
-fruit\_intensity: 626 blank and 71 has 10-mar  
-fruit\_ripe \_observed: 21 blank and 6 - ? only three has notes  
-fruit\_ripe\_intensity: 611 blanks (only 173 has notes)  
-fruit\_drop\_observed: 17 blank and 6 ? only three has notes  
-fruit\_drop\_intensity: 568 blank and 71 has 10-Mar  
+Leaf_breaking_bud_observed: 10 missing value  
+Leaf_breaking_bud_intensity: few values were as 10-March instead of count estimate. And most of the values were missing  
+Leaf_observed: 40 missing values  
+Leaf_intensity: 686 blank  
+Leaf_increasing_size observed: 12 missing field  
+Leaf_increasing_size intensity: 1954 missing field  
+leaf_color_observed: 43 blanks and one - ? (does have a note for ?)  
+leaf_color_intensity: 233 blank  
+leaf_falling observed: 45 blank and 5 - ? (no notes)  
+leaf_falling_intensity: mentioned in metadata but cannot find this column  
+flower_buds_observed: 13 blanks and two - ? (note for only one)  
+flower_buds_intensity: 722 blank and 10 - 10-mar  
+flower_open_observed: 13 blank and one - ? (does have note for ?)  
+flower_open_intensity: 741 blank  
+flower_pollen_release_observed: 14 blank and 177 - ? and only 7 has notes  
+flower_pollen_release_intensity: 157 blank and notes on only 22  
+fruit_observed: 16 blank and 16 - ? and only 2 has notes  
+fruit_intensity: 626 blank and 71 has 10-mar  
+fruit_ripe_observed: 21 blank and 6 - ? only three has notes  
+fruit_ripe_intensity: 611 blanks (only 173 has notes)  
+fruit_drop_observed: 17 blank and 6 ? only three has notes  
+fruit_drop_intensity: 568 blank and 71 has 10-Mar  
 
 #### 2018
 
 In 2018 there are few new units in each column like there is did not look and NA but there is only Yes No blank and ? in the 2017 data and in the metadata. And there is also no notes in the 2018 data so there is no way to know the reason behind the missing data or why the did not look. There is NA instead of blank in the 2018 data.  
 
-Leaf\_breaking\_bud\_observed: 30 - did not look, and 21 - ?  
-Leaf\_breaking\_bud\_intensity: 2627 - NA and two 10-Mar  
-Leaf\_observed: 20 - did not look, 25 - ? and 28 - NA  
-Leaf\_intensity: 1684 - NA  
-Leaf\_increasing\_size observed: 30 - did not look, 42 - ? and 29 - NA  
-Leaf\_increasing\_size intensity: 2493 - NA  
-leaf\_color\_observed: 67 - did not look, 21 - ? and 29 - NA  
-leaf\_color\_intensity: 2819 - NA  
-leaf\_falling observed: 67 - did not look, 14 - ? and 29 - NA  
-leaf\_falling\_intensity: mentioned in metadata but cannot find this column  
-flower\_buds\_observed: 27 - did not look, 24 - ?and 29 - NA  
-flower\_buds\_intensity: 2642 - NA and 6 - 10-Mar  
-flower\_open\_observed: 60 - did not look, 38 - ? and 29 - NA  
-flower\_open\_intensity: 2725 - NA  
-flower\_pollen\_release\_observed: 74 - did not look, 48 - ? and 29 - NA  
-flower\_pollen\_release\_intensity: have totally different units : little, lots, NA, none ,some  
-fruit\_observed: 21 - did not look, 96 - ? and 29 - NA  
-fruit\_intensity: 3212 - NA  
-fruit\_ripe \_observed: 21 - did not look, 21 - ? and 29 - NA  
-fruit\_ripe\_intensity: 2847 - NA  
-fruit\_drop\_observed: 37 - did not look, 18 - ? and 29 - NA  
-fruit\_drop\_intensity: 2867 - NA  
+Leaf_breaking_bud_observed: 30 - did not look, and 21 - ?  
+Leaf_breaking_bud_intensity: 2627 - NA and two 10-Mar  
+Leaf_observed: 20 - did not look, 25 - ? and 28 - NA  
+Leaf_intensity: 1684 - NA  
+Leaf_increasing_size observed: 30 - did not look, 42 - ? and 29 - NA  
+Leaf_increasing_size intensity: 2493 - NA  
+leaf_color_observed: 67 - did not look, 21 - ? and 29 - NA  
+leaf_color_intensity: 2819 - NA  
+leaf_falling observed: 67 - did not look, 14 - ? and 29 - NA  
+leaf_falling_intensity: mentioned in metadata but cannot find this column  
+flower_buds_observed: 27 - did not look, 24 - ?and 29 - NA  
+flower_buds_intensity: 2642 - NA and 6 - 10-Mar  
+flower_open_observed: 60 - did not look, 38 - ? and 29 - NA  
+flower_open_intensity: 2725 - NA  
+flower_pollen_release_observed: 74 - did not look, 48 - ? and 29 - NA  
+flower_pollen_release_intensity: have totally different units : little, lots, NA, none ,some  
+fruit_observed: 21 - did not look, 96 - ? and 29 - NA  
+fruit_intensity: 3212 - NA  
+fruit_ripe_observed: 21 - did not look, 21 - ? and 29 - NA  
+fruit_ripe_intensity: 2847 - NA  
+fruit_drop_observed: 37 - did not look, 18 - ? and 29 - NA  
+fruit_drop_intensity: 2867 - NA  
 
 ### Description of your rationale for the steps you???re taking to remediate data.
 
@@ -191,17 +191,18 @@ write.csv(unwanted_columns_removed,'arboretumcolumnscleaned.csv')
 Now we switch to column cleaned data in Excel which is called "arboretumcolumnscleaned.csv" and will begin cleaning the unwanted rows based on some conditions using in Excel <br>
 
 <td>
-Step 1. filter on "leaf\_color\_observed" field in the excel with "?" and find if their is any valid notes in the "notes\_observer" field.
+Step 1. filter on "leaf_color_observed" field in the excel with "?" and find if their is any valid notes in the "notes_observer" field.
 </td> <br>
 <td>
-Step 2. If the "notes\_observer" field is filled, then leave the row containing the "?" as-is.
+Step 2. If the "notes_observer" field is filled, then leave the row containing the "?" as-is.
 </td> <br>
 <td>
-Step 3. If the "notes\_observer" field is not filled, then remove the whole row which contains the "?"
+Step 3. If the "notes_observer" field is not filled, then remove the whole row which contains the "?"
 </td> <br>
 <td>
-Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf\_breaking\_bud\_observed", "leaf\_observed", "leaf\_increasing\_size\_observed", "leaf\_falling\_observed", "flower\_buds\_observed", "flower\_open\_observed", "fruit\_observed", "fruit\_ripe\_observed" and "fruit\_drop\_observed"
+Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf_breaking_bud_observed", "leaf_observed", "leaf_increasing_size_observed", "leaf_falling_observed", "flower_buds_observed", "flower_open_observed", "fruit_observed", "fruit_ripe_observed" and "fruit_drop_observed"
 </td> <br>
+
 #### Saving the cleaned rows .csv file
 
 <p>
@@ -216,7 +217,7 @@ we will save this manually using the name "arboretumcolumnsandrowscleaned.csv" i
 Now we switch to column and row cleaned data in Excel which is called "arboretumcolumnsandrowscleaned.csv" and will begin cleaning the blank values based on some conditions using in Excel <br>
 
 <td>
-Step 1. filter on "leaf\_breaking\_bud\_observed" field in the excel with "N" and find if the corresponding intensity field(in this case it is the "leaf\_breaking\_bud\_intensity" field) has a "0" or a blank.
+Step 1. filter on "leaf_breaking_bud_observed" field in the excel with "N" and find if the corresponding intensity field(in this case it is the "leaf_breaking_bud_intensity" field) has a "0" or a blank.
 </td> <br>
 <td>
 Step 2. If the corresponding intensity field is "0", then leave the it as-is.
@@ -225,10 +226,10 @@ Step 2. If the corresponding intensity field is "0", then leave the it as-is.
 Step 3. If the corresponding intensity field is blank, then fill the same field with a "0". so that troughout the sheet we have similar data, meaning a no is corresponding to a "0" intensity level
 </td> <br>
 <td>
-Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf\_color\_observed", "leaf\_observed", "leaf\_increasing\_size\_observed", "leaf\_falling\_observed", "flower\_buds\_observed", "flower\_open\_observed", "fruit\_observed", "fruit\_ripe\_observed" and "fruit\_drop\_observed"
+Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf_color_observed", "leaf_observed", "leaf_increasing_size_observed", "leaf_falling_observed", "flower_buds_observed", "flower_open_observed", "fruit_observed", "fruit_ripe_observed" and "fruit_drop_observed"
 </td> <br>
 <p>
-For some of the intensity fields. The value is "10-Mar" instead of "10-03". For this we filter on such values and change them to "10-3". All such values are only found in "intensity" fields such as "leaf\_breaking\_bud\_intensity". Repeat this step for all the intesity fields <br>
+For some of the intensity fields. The value is "10-Mar" instead of "10-03". For this we filter on such values and change them to "10-3". All such values are only found in "intensity" fields such as "leaf_breaking_bud_intensity". Repeat this step for all the intesity fields <br>
 
 #### Saving the cleaned rows .csv file
 
@@ -334,7 +335,7 @@ Step 3. If the corresponding intensity field is blank, then fill the same field 
 Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf.color.observed", "leaf.observed", "leaf.increasing.size.observed", "leaf.falling.observed", "flower.buds.observed", "flower.open.observed", "fruit.observed", "fruit.ripe.observed" and "fruit.drop.observed"
 </td> <br>
 <p>
-For some of the intensity fields. The value is "10-Mar" instead of "10-03". For this we filter on such values and change them to "10-3". All such values are only found in "intensity" fields such as "leaf\_breaking\_bud\_intensity". Repeat this step for all the intesity fields
+For some of the intensity fields. The value is "10-Mar" instead of "10-03". For this we filter on such values and change them to "10-3". All such values are only found in "intensity" fields such as "leaf.breaking.bud.intensity". Repeat this step for all the intesity fields
 
 #### Saving the cleaned file to .csv file
 
