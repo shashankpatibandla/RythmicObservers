@@ -188,60 +188,60 @@ write.csv(unwanted_columns_removed,'arboretumcolumnscleaned.csv')
 #### Cleaning unwanted rows
 
 <p>
-Now we switch to column cleaned data in Excel which is called "arboretumcolumnscleaned.csv" and will begin cleaning the unwanted rows based on some conditions using in Excel
+Now we switch to column cleaned data in Excel which is called "arboretumcolumnscleaned.csv" and will begin cleaning the unwanted rows based on some conditions using in Excel <br>
 
 <td>
 Step 1. filter on "leaf\_color\_observed" field in the excel with "?" and find if their is any valid notes in the "notes\_observer" field.
-</td>
+</td> <br>
 <td>
 Step 2. If the "notes\_observer" field is filled, then leave the row containing the "?" as-is.
-</td>
+</td> <br>
 <td>
 Step 3. If the "notes\_observer" field is not filled, then remove the whole row which contains the "?"
-</td>
+</td> <br>
 <td>
 Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf\_breaking\_bud\_observed", "leaf\_observed", "leaf\_increasing\_size\_observed", "leaf\_falling\_observed", "flower\_buds\_observed", "flower\_open\_observed", "fruit\_observed", "fruit\_ripe\_observed" and "fruit\_drop\_observed"
-</td>
+</td> <br>
 #### Saving the cleaned rows .csv file
 
 <p>
-Now we should have a .csv file which contains cleaned data with respect to rows and columns.
+Now we should have a .csv file which contains cleaned data with respect to rows and columns. <br>
 
 <p>
-we will save this manually using the name "arboretumcolumnsandrowscleaned.csv" in the working directory
+we will save this manually using the name "arboretumcolumnsandrowscleaned.csv" in the working directory. <br>
 
 #### Replacing data with blank fields based on a condition
 
 <p>
-Now we switch to column and row cleaned data in Excel which is called "arboretumcolumnsandrowscleaned.csv" and will begin cleaning the blank values based on some conditions using in Excel
+Now we switch to column and row cleaned data in Excel which is called "arboretumcolumnsandrowscleaned.csv" and will begin cleaning the blank values based on some conditions using in Excel <br>
 
 <td>
 Step 1. filter on "leaf\_breaking\_bud\_observed" field in the excel with "N" and find if the corresponding intensity field(in this case it is the "leaf\_breaking\_bud\_intensity" field) has a "0" or a blank.
-</td>
+</td> <br>
 <td>
 Step 2. If the corresponding intensity field is "0", then leave the it as-is.
-</td>
+</td> <br>
 <td>
 Step 3. If the corresponding intensity field is blank, then fill the same field with a "0". so that troughout the sheet we have similar data, meaning a no is corresponding to a "0" intensity level
-</td>
+</td> <br>
 <td>
 Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf\_color\_observed", "leaf\_observed", "leaf\_increasing\_size\_observed", "leaf\_falling\_observed", "flower\_buds\_observed", "flower\_open\_observed", "fruit\_observed", "fruit\_ripe\_observed" and "fruit\_drop\_observed"
-</td>
+</td> <br>
 <p>
-For some of the intensity fields. The value is "10-Mar" instead of "10-03". For this we filter on such values and change them to "10-3". All such values are only found in "intensity" fields such as "leaf\_breaking\_bud\_intensity". Repeat this step for all the intesity fields
+For some of the intensity fields. The value is "10-Mar" instead of "10-03". For this we filter on such values and change them to "10-3". All such values are only found in "intensity" fields such as "leaf\_breaking\_bud\_intensity". Repeat this step for all the intesity fields <br>
 
 #### Saving the cleaned rows .csv file
 
 <p>
-Now we should have a .csv file which contains fully cleaned data with respect to rows and columns and values.
+Now we should have a .csv file which contains fully cleaned data with respect to rows and columns and values. <br>
 
 <p>
-we will save this manually using the name "arboretumfullycleaned.csv" in the working directory
+we will save this manually using the name "arboretumfullycleaned.csv" in the working directory <br>
 
 #### Load Data for Observations in 2018
 
 <p>
-you should have the original .csv file in the working directory.
+you should have the original .csv file in the working directory. 
 
 ``` r
 arboretum_data_2018 <- read.csv("PhenologyObservations_2018_LC_Oaks.csv")
@@ -278,71 +278,71 @@ write.csv(unwanted_columns_removed_2018,'arboretumcolumnscleaned2018.csv')
 #### Diferentiating the species from the Genus
 
 <p>
-Now we switch to column cleaned data in Excel which is called "arboretumcolumnscleaned2018.csv" and can differentiate the species from the genus. In the current sheet we have both the genus and species in the same field i.e "Species".
+Now we switch to column cleaned data in Excel which is called "arboretumcolumnscleaned2018.csv" and can differentiate the species from the genus. In the current sheet we have both the genus and species in the same field i.e "Species". <br>
 
 <td>
-create a new field called "genus" just before the "species" field and we will seperate the genus from the species. This will help us have consistent columns in 2017 and 2018 data.
+create a new field called "genus" just before the "species" field and we will seperate the genus from the species. This will help us have consistent columns in 2017 and 2018 data. <br>
 
 #### Saving the cleaned rows .csv file
 
 <p>
-Now we should have a .csv file which contains consistent data and columns with respect 2017 data.
+Now we should have a .csv file which contains consistent data and columns with respect 2017 data. <br>
 
 <p>
-we will save this manually using the name "arboretum2018consistent.csv" in the working directory
+we will save this manually using the name "arboretum2018consistent.csv" in the working directory <br>
 
 #### Cleaning unwanted rows
 
 <p>
-Now we switch to column cleaned data in Excel which is called "arboretum2018consistent.csv" and will begin cleaning the unwanted rows based on some conditions using in Excel
+Now we switch to column cleaned data in Excel which is called "arboretum2018consistent.csv" and will begin cleaning the unwanted rows based on some conditions using in Excel <br>
 
 <td>
-Step 1. filter on "leaf.color.observed" field in the excel with "?" or "did not look for" and find if their is any valid notes in the "notes.observer" field.
+Step 1. filter on "leaf.color.observed" field in the excel with "?" or "did not look for" and find if their is any valid notes in the "notes.observer" field. <br>
 </td>
 <td>
-Step 2. If the "Notes.Observer" field is filled, then leave the row containing the "?" or "did not look for" as-is.
-</td>
+Step 2. If the "Notes.Observer" field is filled, then leave the row containing the "?" or "did not look for" as-is. <br>
+</td> <br>
 <td>
-Step 3. If the "Notes.Observer" field is not filled, remove the whole row which contains the "?" or "did not look for"
-</td>
+Step 3. If the "Notes.Observer" field is not filled, remove the whole row which contains the "?" or "did not look for" 
+</td> <br>
 <td>
-Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf.breaking.bud.observed", "leaf.observed", "leaf.increasing.size.observed", "leaf.falling.observed", "flower.buds.observed", "flower.open.observed", "fruit.observed", "fruit.ripe.observed" and "fruit.drop.observed"
-</td>
+Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf.breaking.bud.observed", "leaf.observed", "leaf.increasing.size.observed", "leaf.falling.observed", "flower.buds.observed", "flower.open.observed", "fruit.observed", "fruit.ripe.observed" and "fruit.drop.observed" 
+</td> <br>
 #### Saving the cleaned rows .csv file
 
 <p>
-Now we should have a .csv file which contains cleaned data with respect to rows and columns.
+Now we should have a .csv file which contains cleaned data with respect to rows and columns. <br>
 
 <p>
-we will save this manually using the name "arboretumcolumnsandrowscleaned2018.csv" in the working directory
+we will save this manually using the name "arboretumcolumnsandrowscleaned2018.csv" in the working directory <br>
 
 #### Replacing data with blank fields based on a condition
 
 <p>
-Now we switch to column cleaned data in Excel which is called "arboretumcolumnsandrowscleaned.csv" and will begin cleaning the unwanted rows based on some conditions using in Excel
+Now we switch to column cleaned data in Excel which is called "arboretumcolumnsandrowscleaned.csv" and will begin cleaning the unwanted rows based on some conditions using in Excel <br>
 
 <td>
 Step 1. filter on "leaf.breaking.bud.observed" field in the excel with "N" and find if the corresponding intensity field(in this case it is the "leaf.breaking.bud.intensity" field has a "0" or a blank.
-</td>
+</td> <br>
 <td>
 Step 2. If the corresponding intensity field is "0", then leave the it as-is.
-</td>
+</td> <br>
 <td>
 Step 3. If the corresponding intensity field is blank, then fill the same field with a "0". so that troughout the sheet we have similar data, meaning a no is corresponding to a "0" intensity level
-</td>
+</td> <br>
 <td>
 Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf.color.observed", "leaf.observed", "leaf.increasing.size.observed", "leaf.falling.observed", "flower.buds.observed", "flower.open.observed", "fruit.observed", "fruit.ripe.observed" and "fruit.drop.observed"
-</td>
+</td> <br>
 <p>
 For some of the intensity fields. The value is "10-Mar" instead of "10-03". For this we filter on such values and change them to "10-3". All such values are only found in "intensity" fields such as "leaf\_breaking\_bud\_intensity". Repeat this step for all the intesity fields
 
 #### Saving the cleaned file to .csv file
 
 <p>
-Now we should have a .csv file which contains cleaned data with respect to rows and columns.
+Now we should have a .csv file which contains cleaned data with respect to rows and columns. <br>
 
 <p>
-we will save this manually using the name "arboretumfullycleaned2018.csv" in the working directory
+we will save this manually using the name "arboretumfullycleaned2018.csv" in the working directory <br>
 
 #### To view any files created/written in R we use
 
@@ -359,8 +359,8 @@ we need to futher clean some of the values like n/a or anomolies. As we know cle
 
 ### A contributorship statement.
 
-1.  Sujana - Worked on the issue and the rational to solve the issue part of this assignment
-2.  Goutam - Worked on the description of data and metadata part of this assignment
-3.  Shashank - Worked on data cleaning process
+1.  Sujana - Worked on the issue and the rational to solve the issue part of this assignment <br>
+2.  Goutam - Worked on the description of data and metadata part of this assignment <br>
+3.  Shashank - Worked on data cleaning process <br>
 
-Proofread by - Shashank Patibandla on 10/16/2018
+Proofread by - Shashank Patibandla on 10/17/2018
