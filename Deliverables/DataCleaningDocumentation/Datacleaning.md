@@ -100,7 +100,7 @@ leaf\_falling observed: 45 blank and 5 - ? (no notes)
 leaf\_falling\_intensity: mentioned in metadata but cannot find this column  
 flower\_buds\_observed: 13 blanks and two - ? (note for only one)  
 flower\_buds\_intensity: 722 blank and 10 - 10-mar  
-flower\_open\_observed: 13 blank and one - ? (does have note for ???????)  
+flower\_open\_observed: 13 blank and one - ? (does have note for ?)  
 flower\_open\_intensity: 741 blank  
 flower\_pollen\_release\_observed: 14 blank and 177 - ? and only 7 has notes  
 flower\_pollen\_release\_intensity: 157 blank and notes on only 22  
