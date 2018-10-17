@@ -6,7 +6,7 @@
 
 ##### Please Find the Audience Profile for the Project [here](https://github.com/shashankpatibandla/RythmicObservers/tree/master/Deliverables/Audience%20Profile)
 
-##### ##### Please Find the Data Cleaning Documentation for the Project [here](https://github.com/shashankpatibandla/RythmicObservers/tree/master/Deliverables/DataCleaningDocumentation)
+##### Please Find the Data Cleaning Documentation for the Project [here](https://github.com/shashankpatibandla/RythmicObservers/tree/master/Deliverables/DataCleaningDocumentation)
 
 ### Authors
   1. Shashank Patibandla
