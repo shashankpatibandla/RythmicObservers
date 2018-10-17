@@ -190,26 +190,16 @@ write.csv(unwanted_columns_removed,'arboretumcolumnscleaned.csv')
 <p>
 Now we switch to column cleaned data in Excel which is called "arboretumcolumnscleaned.csv" and will begin cleaning the unwanted rows based on some conditions using in Excel <br>
 
-<td>
-Step 1. filter on "leaf_color_observed" field in the excel with "?" and find if their is any valid notes in the "notes_observer" field.
-</td> <br>
-<td>
-Step 2. If the "notes_observer" field is filled, then leave the row containing the "?" as-is.
-</td> <br>
-<td>
-Step 3. If the "notes_observer" field is not filled, then remove the whole row which contains the "?"
-</td> <br>
-<td>
-Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf_breaking_bud_observed", "leaf_observed", "leaf_increasing_size_observed", "leaf_falling_observed", "flower_buds_observed", "flower_open_observed", "fruit_observed", "fruit_ripe_observed" and "fruit_drop_observed"
-</td> <br>
+<td> Step 1. filter on "leaf_color_observed" field in the excel with "?" and find if their is any valid notes in the "notes_observer" field. </td> <br>
+<td> Step 2. If the "notes_observer" field is filled, then leave the row containing the "?" as-is. </td> <br>
+<td> Step 3. If the "notes_observer" field is not filled, then remove the whole row which contains the "?" </td> <br>
+<td> Step 4. Repeat steps 1 to 3 for all the fields listed here - "leaf_breaking_bud_observed", "leaf_observed", "leaf_increasing_size_observed", "leaf_falling_observed", "flower_buds_observed", "flower_open_observed", "fruit_observed", "fruit_ripe_observed" and "fruit_drop_observed" </td> <br>
 
 #### Saving the cleaned rows .csv file
 
-<p>
-Now we should have a .csv file which contains cleaned data with respect to rows and columns. <br>
+<p> Now we should have a .csv file which contains cleaned data with respect to rows and columns. <br>
 
-<p>
-we will save this manually using the name "arboretumcolumnsandrowscleaned.csv" in the working directory. <br>
+<p> we will save this manually using the name "arboretumcolumnsandrowscleaned.csv" in the working directory. <br>
 
 #### Replacing data with blank fields based on a condition
 
