@@ -1,17 +1,18 @@
+Morton Arboretum
+================
+Goutham, Shashank, Sujana
+October 31, 2018
+
 -   [1. Executive Summary](#executive-summary)
 -   [2. Data cleaning on 2017 Dataset](#data-cleaning-on-2017-dataset)
--   [3. Find the Range of Intensities based on
-    Species](#find-the-range-of-intensities-based-on-species)
+-   [3. Find the Range of Intensities based on Species](#find-the-range-of-intensities-based-on-species)
 -   [4. Discriptive statistics](#discriptive-statistics)
 -   [5. Conclusion](#conclusion)
 -   [6. Contributorship Statement](#contributorship-statement)
 
 ### 1. Executive Summary
 
--   In this document, team “Morton Arboretum” has covered the
-    descriptive analysis performed on the Oak Tree Phenology Data Set,
-    for the year 2017. Going forwards, our team will work and provide
-    more insights on the dataset by generating plots.
+-   In this document, team “Morton Arboretum” has covered the descriptive analysis performed on the Oak Tree Phenology Data Set, for the year 2017. Going forwards, our team will work and provide more insights on the dataset by generating plots.
 
 ### 2. Data cleaning on 2017 Dataset
 
@@ -19,29 +20,29 @@
 
 -   Set up the Working Directory
 
--   Read the data from the CSV file into the Dataframe named
-    “analysisdata”
+-   Read the data from the CSV file into the Dataframe named “analysisdata”
 
--   Our dataset has records which has values as “NA”. Exclude them from
-    the analysis so as to focus on the ones which has accurate values
+-   Our dataset has records which has values as “NA”. Exclude them from the analysis so as to focus on the ones which has accurate values
 
 -   Go through the dataframe to understand the data
 
-<!-- -->
-
-    analysisdata = read.csv("MortonArboretum2017.csv", header = TRUE, stringsAsFactors = FALSE)
+``` r
+analysisdata = read.csv("MortonArboretum2017.csv", header = TRUE, stringsAsFactors = FALSE)
+```
 
      na.exclude(analysisdata)
 
-    View(analysisdata)
+``` r
+View(analysisdata)
+```
 
 #### Step 2: To understand more about the data
 
 -   We ran the below command to get an insight onto the data
 
-<!-- -->
-
-    str(analysisdata)
+``` r
+str(analysisdata)
+```
 
     ## 'data.frame':    2874 obs. of  26 variables:
     ##  $ X                             : int  1 2 3 4 5 6 7 8 9 10 ...
@@ -73,48 +74,37 @@
 
 #### Step 3: Perform Data Cleaning using the below steps
 
--   The data looked clean when we did step 2, but we wanted to take a
-    close look at the dataset to understand if needs to be cleaned
+-   The data looked clean when we did step 2, but we wanted to take a close look at the dataset to understand if needs to be cleaned
 
--   Looking at the dataset, we figured out that we had a mix up with
-    Date and percentage values. Date had replaced some of the columns
-    which had percentages. In our cleaning exercise, we had replaced the
-    required fields with percentage values using the below mentioned
-    steps.
+-   Looking at the dataset, we figured out that we had a mix up with Date and percentage values. Date had replaced some of the columns which had percentages. In our cleaning exercise, we had replaced the required fields with percentage values using the below mentioned steps.
 
-<!-- -->
-
-    analysisdata$leaf_breaking_bud_intensity[analysisdata$leaf_breaking_bud_intensity == "10-Mar"] <- "03-10"
-    analysisdata$flower_buds_intensity[analysisdata$flower_buds_intensity == "10-Mar"] <- "03-10"
-    analysisdata$fruit_intensity[analysisdata$fruit_intensity == "10-Mar"] <- "03-10"
-    analysisdata$fruit_drop_intensity[analysisdata$fruit_drop_intensity == "10-Mar"] <- "03-10"
-    analysisdata$flower_buds_intensity[analysisdata$flower_buds_intensity == "43169.00"] <- "03-10"
-    analysisdata[analysisdata == ""] <- "0"
+``` r
+analysisdata$leaf_breaking_bud_intensity[analysisdata$leaf_breaking_bud_intensity == "10-Mar"] <- "03-10"
+analysisdata$flower_buds_intensity[analysisdata$flower_buds_intensity == "10-Mar"] <- "03-10"
+analysisdata$fruit_intensity[analysisdata$fruit_intensity == "10-Mar"] <- "03-10"
+analysisdata$fruit_drop_intensity[analysisdata$fruit_drop_intensity == "10-Mar"] <- "03-10"
+analysisdata$flower_buds_intensity[analysisdata$flower_buds_intensity == "43169.00"] <- "03-10"
+analysisdata[analysisdata == ""] <- "0"
+```
 
 ### 3. Find the Range of Intensities based on Species
 
--   After cleaning the data, we went ahead to find the range of
-    intensities on specific columns based on Oak tree species by
-    following the below mentioned steps.
+-   After cleaning the data, we went ahead to find the range of intensities on specific columns based on Oak tree species by following the below mentioned steps.
 
 -   Why Range?
 
-    -   Our intention is to predict how the trees are responding over
-        time to the climatic conditions.
-    -   Right now, we do not have the **weather data** included in the
-        dataset. Going forwards, our team will work on the weather data
-        to provide **insightful visualizations**.
+    -   Our intention is to predict how the trees are responding over time to the climatic conditions.
+    -   Right now, we do not have the **weather data** included in the dataset. Going forwards, our team will work on the weather data to provide **insightful visualizations**.
 
-1.  Range between leaf\_breaking\_bud\_intensity against Species
+##### Step 1. Range between leaf\_breaking\_bud\_intensity against Species
 
-    -   This helps us understand the estimate of how many leaf buds are
-        breaking based on species.
+    + This helps us understand the estimate of how many leaf buds are breaking based on species. 
 
-<!-- -->
+``` r
+library(doBy)
 
-    library(doBy)
-
-    summaryBy(leaf_breaking_bud_intensity ~ species, data = analysisdata, FUN = range)
+summaryBy(leaf_breaking_bud_intensity ~ species, data = analysisdata, FUN = range)
+```
 
     ##          species leaf_breaking_bud_intensity.FUN1
     ## 1         lyrata                                0
@@ -181,14 +171,13 @@
     ## 30                           11-100
     ## 31                                0
 
-1.  Range between leaf\_intensity against Species
+##### Step 2. Range between leaf\_intensity against Species
 
-    -   This helps us understand the estimate of potential canopy space
-        based on species, ignoring the dead branches.
+    + This helps us understand the estimate of potential canopy space based on species, ignoring the dead branches.
 
-<!-- -->
-
-    summaryBy(leaf_intensity ~ species, data = analysisdata, FUN = range)
+``` r
+summaryBy(leaf_intensity ~ species, data = analysisdata, FUN = range)
+```
 
     ##          species leaf_intensity.FUN1 leaf_intensity.FUN2
     ## 1         lyrata                >95%                >95%
@@ -223,14 +212,13 @@
     ## 30      velutina                 <5%              75-94%
     ## 31   x freemanii                   0                   0
 
-1.  Range between leaf\_increasing\_size\_intensity against Species
+##### Step 3. Range between leaf\_increasing\_size\_intensity against Species
 
-    -   This helps us understand the estimate of the number of leaves
-        that are fully grown
+    + This helps us understand the estimate of the number of leaves that are fully grown
 
-<!-- -->
-
-    summaryBy(leaf_increasing_size_intensity ~ species, data = analysisdata, FUN = range)
+``` r
+summaryBy(leaf_increasing_size_intensity ~ species, data = analysisdata, FUN = range)
+```
 
     ##          species leaf_increasing_size_intensity.FUN1
     ## 1         lyrata                                >95%
@@ -297,14 +285,13 @@
     ## 30                              75-94%
     ## 31                                   0
 
-1.  Range between leaf\_color\_intensity against Species
+##### Step 4. Range between leaf\_color\_intensity against Species
 
-    -   This helps us understand the estimate of the potential canopy
-        space is full with non-green leaf color, ignoring dead branches.
+    + This helps us understand the estimate of the potential canopy space is full with non-green leaf color, ignoring dead branches.
 
-<!-- -->
-
-    summaryBy(leaf_color_intensity ~ species, data = analysisdata, FUN = range)
+``` r
+summaryBy(leaf_color_intensity ~ species, data = analysisdata, FUN = range)
+```
 
     ##          species leaf_color_intensity.FUN1 leaf_color_intensity.FUN2
     ## 1         lyrata                         0                         0
@@ -339,14 +326,13 @@
     ## 30      velutina                       <5%                    75-94%
     ## 31   x freemanii                         0                         0
 
-1.  Range between flower\_buds\_intensity against Species
+##### Step 5. Range between flower\_buds\_intensity against Species
 
-    -   This helps us understand the estimate of the number of flower
-        buds that are present on each species
+    + This helps us understand the estimate of the number of flower buds that are present on each species
 
-<!-- -->
-
-    summaryBy(flower_buds_intensity ~ species, data = analysisdata, FUN = range)
+``` r
+summaryBy(flower_buds_intensity ~ species, data = analysisdata, FUN = range)
+```
 
     ##          species flower_buds_intensity.FUN1 flower_buds_intensity.FUN2
     ## 1         lyrata                          0                          0
@@ -381,14 +367,13 @@
     ## 30      velutina                     >10000                  101-10000
     ## 31   x freemanii                          0                     11-100
 
-1.  Range between flower\_open\_intensity against Species
+##### Step 6. Range between flower\_open\_intensity against Species
 
-    -   This helps us understand the estimate of the number of flower
-        that are visible on each species
+    + This helps us understand the estimate of the number of flower that are visible on each species
 
-<!-- -->
-
-    summaryBy(flower_open_intensity ~ species, data = analysisdata, FUN = range)
+``` r
+summaryBy(flower_open_intensity ~ species, data = analysisdata, FUN = range)
+```
 
     ##          species flower_open_intensity.FUN1 flower_open_intensity.FUN2
     ## 1         lyrata                          0                          0
@@ -423,14 +408,13 @@
     ## 30      velutina                       >95%                     75-94%
     ## 31   x freemanii                          0                          0
 
-1.  Range between fruit\_intensity against Species
+##### Step 7. Range between fruit\_intensity against Species
 
-    -   This helps us understand the estimate of the number of fruit
-        that are present on each species
+    + This helps us understand the estimate of the number of fruit that are present on each species
 
-<!-- -->
-
-    summaryBy(fruit_intensity ~ species, data = analysisdata, FUN = range)
+``` r
+summaryBy(fruit_intensity ~ species, data = analysisdata, FUN = range)
+```
 
     ##          species fruit_intensity.FUN1 fruit_intensity.FUN2
     ## 1         lyrata                    0                    0
@@ -465,14 +449,13 @@
     ## 30      velutina                   <3               11-100
     ## 31   x freemanii                    0                    0
 
-1.  Range between fruit\_ripe\_intensity against Species
+##### Step 8. Range between fruit\_ripe\_intensity against Species
 
-    -   This helps us understand the estimate of the number of fruit
-        that are present on each species which are ripe
+    + This helps us understand the estimate of the number of fruit that are present on each species which are ripe
 
-<!-- -->
-
-    summaryBy(fruit_ripe_intensity ~ species, data = analysisdata, FUN = range)
+``` r
+summaryBy(fruit_ripe_intensity ~ species, data = analysisdata, FUN = range)
+```
 
     ##          species fruit_ripe_intensity.FUN1 fruit_ripe_intensity.FUN2
     ## 1         lyrata                         0                         0
@@ -507,14 +490,13 @@
     ## 30      velutina                      >95%                    50-74%
     ## 31   x freemanii                         0                         0
 
-1.  Range between fruit\_drop\_intensity against Species
+##### Step 9. Range between fruit\_drop\_intensity against Species
 
-    -   This helps us understand the estimate of the number of fruit
-        that have dropped seeds since last time on each species
+    + This helps us understand the estimate of the number of fruit that have dropped seeds since last time on each species
 
-<!-- -->
-
-    summaryBy(fruit_drop_intensity ~ species, data = analysisdata, FUN = range)
+``` r
+summaryBy(fruit_drop_intensity ~ species, data = analysisdata, FUN = range)
+```
 
     ##          species fruit_drop_intensity.FUN1 fruit_drop_intensity.FUN2
     ## 1         lyrata                         0                         0
@@ -553,27 +535,24 @@
 
 #### Understand which species shows what kind of phenophase
 
--   Our agenda in here is to understand how each species respond
-    throughout the entire year. With the results whcih we obtain with
-    the below commands helps us to understand whether is there a
-    significant change that happens throughout the year for a particular
-    species.
+-   Our agenda in here is to understand how each species respond throughout the entire year. With the results whcih we obtain with the below commands helps us to understand whether is there a significant change that happens throughout the year for a particular species.
 
--   Adding weather data to the results will help us anlayze based on the
-    seasonsal outcomes.
+-   Adding weather data to the results will help us anlayze based on the seasonsal outcomes.
 
 -   We will be adding the weather data sooner.
 
-<!-- -->
-
-    rubra_subset <- subset(analysisdata, species=="rubra",
-                           select=c(leaf_breaking_bud_observed, leaf_observed, leaf_increasing_size_observed, 
-                                    leaf_color_observed, leaf_falling_observed, flower_buds_observed, flower_open_observed, 
-                                    fruit_observed, fruit_ripe_observed, fruit_drop_observed))
+``` r
+rubra_subset <- subset(analysisdata, species=="rubra",
+                       select=c(leaf_breaking_bud_observed, leaf_observed, leaf_increasing_size_observed, 
+                                leaf_color_observed, leaf_falling_observed, flower_buds_observed, flower_open_observed, 
+                                fruit_observed, fruit_ripe_observed, fruit_drop_observed))
+```
 
     View(rubra_subset)
 
-    summary(rubra_subset)
+``` r
+summary(rubra_subset)
+```
 
     ##  leaf_breaking_bud_observed leaf_observed    leaf_increasing_size_observed
     ##  Min.   :0.0000             Min.   :0.0000   Min.   :0.0000               
@@ -608,19 +587,16 @@
     ##  Max.   :1.0000     
     ## 
 
--   We had performed the same operation for all the species but aren't
-    mentioning it here.
+-   We had performed the same operation for all the species but aren't mentioning it here.
 
 ### 5. Conclusion
 
-In the coming week, our team will work on adding the weather data and
-developing plots to provide insightful visualizations.
+In the coming week, our team will work on adding the weather data and developing plots to provide insightful visualizations.
 
 ### 6. Contributorship Statement
 
 -   Goutham - RMarkdown document, RHTML, Push to Git
 -   Shashank - Performed Data Cleaning, Finding the Range of Intensities
--   Sujana - Performed analysis on understanding the phenophase for all
-    species
+-   Sujana - Performed analysis on understanding the phenophase for all species
 
 -   **Proofread** : Everyone
