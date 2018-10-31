@@ -1,0 +1,221 @@
+---
+title: "Morton Arboretum"
+author: "Goutham, Shashank, Sujana"
+date: "October 31, 2018"
+output: 
+  html_document:
+    toc: yes
+---
+
+
+### 1. Executive Summary
+
+* In this document, team “Morton Arboretum” has covered the descriptive analysis performed on the Oak Tree Phenology Data Set, for the year 2017. Going forwards, our team will work and provide more insights on the dataset by generating plots.
+
+### 2. Data cleaning on 2017 Dataset
+
+#### Step 1: Read the CSV File into a dataframe
+
+* Set up the Working Directory
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE} 
+knitr::opts_chunk$set(cache=TRUE)
+knitr::opts_knit$set(root.dir = "F:/Data to Decisions") 
+```
+
+* Read the data from the CSV file into the Dataframe named “analysisdata”
+
+* Our dataset has records which has values as “NA”. Exclude them from the analysis so as to focus on the ones which has accurate values
+
+* Go through the dataframe to understand the data
+
+```{r analysisdata}
+
+analysisdata = read.csv("MortonArboretum2017.csv", header = TRUE, stringsAsFactors = FALSE)
+
+```
+     na.exclude(analysisdata)
+```{r view analysisdata}
+
+View(analysisdata)
+
+```
+
+#### Step 2: To understand more about the data
+
+* We ran the below command to get an insight onto the data
+
+```{r str}
+str(analysisdata)
+```
+
+#### Step 3: Perform Data Cleaning using the below steps
+
+* The data looked clean when we did step 2, but we wanted to take a close look at the dataset to understand if needs to be cleaned 
+
+* Looking at the dataset, we figured out that we had a mix up with Date and percentage values. Date had replaced some of the columns which had percentages. In our cleaning exercise, we had replaced the required fields with percentage values using the below mentioned steps.
+
+```{r analysis}
+analysisdata$leaf_breaking_bud_intensity[analysisdata$leaf_breaking_bud_intensity == "10-Mar"] <- "03-10"
+analysisdata$flower_buds_intensity[analysisdata$flower_buds_intensity == "10-Mar"] <- "03-10"
+analysisdata$fruit_intensity[analysisdata$fruit_intensity == "10-Mar"] <- "03-10"
+analysisdata$fruit_drop_intensity[analysisdata$fruit_drop_intensity == "10-Mar"] <- "03-10"
+analysisdata$flower_buds_intensity[analysisdata$flower_buds_intensity == "43169.00"] <- "03-10"
+analysisdata[analysisdata == ""] <- "0"
+```
+
+
+### 3. Find the Range of Intensities based on Species
+
+* After cleaning the data, we went ahead to find the range of intensities on specific columns based on Oak tree species by following the below mentioned steps.
+
+* Why Range?
+    
+    + Our intention is to predict how the trees are responding over time to the climatic conditions.
+    + Right now, we do not have the **weather data** included in the dataset. Going forwards, our team will work on the weather data to provide **insightful visualizations**.
+    
+
+1. Range between leaf_breaking_bud_intensity against Species
+
+    + This helps us understand the estimate of how many leaf buds are breaking based on species. 
+
+```{r find range}
+library(doBy)
+
+summaryBy(leaf_breaking_bud_intensity ~ species, data = analysisdata, FUN = range)
+
+```
+
+2. Range between leaf_intensity against Species
+
+    + This helps us understand the estimate of potential canopy space based on species, ignoring the dead branches.
+    
+```{r leaf intensity}
+
+summaryBy(leaf_intensity ~ species, data = analysisdata, FUN = range)
+
+```
+
+
+3. Range between leaf_increasing_size_intensity against Species
+
+    + This helps us understand the estimate of the number of leaves that are fully grown
+    
+```{r leaf size intensity}
+
+summaryBy(leaf_increasing_size_intensity ~ species, data = analysisdata, FUN = range)
+
+```
+    
+    
+4. Range between leaf_color_intensity against Species
+
+    + This helps us understand the estimate of the potential canopy space is full with non-green leaf color, ignoring dead branches.
+
+    
+```{r leaf color intensity}
+
+summaryBy(leaf_color_intensity ~ species, data = analysisdata, FUN = range)
+
+```
+
+    
+5. Range between flower_buds_intensity against Species
+
+    + This helps us understand the estimate of the number of flower buds that are present on each species
+
+    
+```{r flower buds intensity}
+
+summaryBy(flower_buds_intensity ~ species, data = analysisdata, FUN = range)
+
+```
+
+6. Range between flower_open_intensity against Species
+
+    + This helps us understand the estimate of the number of flower that are visible on each species
+
+    
+```{r flower open intensity}
+
+summaryBy(flower_open_intensity ~ species, data = analysisdata, FUN = range)
+
+```
+
+7. Range between fruit_intensity against Species
+
+    + This helps us understand the estimate of the number of fruit that are present on each species
+
+    
+```{r fruit intensity}
+
+summaryBy(fruit_intensity ~ species, data = analysisdata, FUN = range)
+
+```
+
+8. Range between fruit_ripe_intensity against Species
+
+    + This helps us understand the estimate of the number of fruit that are present on each species which are ripe
+
+    
+```{r fruit ripe intensity}
+
+summaryBy(fruit_ripe_intensity ~ species, data = analysisdata, FUN = range)
+
+```
+
+
+9. Range between fruit_drop_intensity against Species
+
+    + This helps us understand the estimate of the number of fruit that have dropped seeds since last time on each species
+
+    
+```{r fruit drop intensity}
+
+summaryBy(fruit_drop_intensity ~ species, data = analysisdata, FUN = range)
+
+```
+
+### 4. Discriptive statistics
+
+#### Understand which species shows what kind of phenophase
+
+* Our agenda in here is to understand how each species respond throughout the entire year. With the results whcih we obtain with the below commands helps us to understand whether is there a significant change that happens throughout the year for a particular species.
+
+* Adding weather data to the results will help us anlayze based on the seasonsal outcomes.
+
+* We will be adding the weather data sooner. 
+
+```{r rubra}
+rubra_subset <- subset(analysisdata, species=="rubra",
+                       select=c(leaf_breaking_bud_observed, leaf_observed, leaf_increasing_size_observed, 
+                                leaf_color_observed, leaf_falling_observed, flower_buds_observed, flower_open_observed, 
+                                fruit_observed, fruit_ripe_observed, fruit_drop_observed))
+
+```
+
+    View(rubra_subset)
+
+```{r rubra summary}
+
+summary(rubra_subset)
+
+```
+    
+* We had performed the same operation for all the species but aren't mentioning it here.
+
+
+### 5. Conclusion
+
+In the coming week, our team will work on adding the weather data and developing plots to provide insightful visualizations.
+
+
+### 6. Contributorship Statement
+
+* Goutham - RMarkdown document, RHTML, Push to Git
+* Shashank - Performed Data Cleaning, Finding the Range of Intensities
+* Sujana - Performed analysis on understanding the phenophase for all species
+
+* **Proofread** : Everyone
+
+
