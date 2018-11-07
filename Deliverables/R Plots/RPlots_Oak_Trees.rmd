@@ -1,0 +1,106 @@
+---
+title: "RPlot Oak Trees"
+author: "Goutham, Shashank, Sujana"
+date: "November 6, 2018"
+output: 
+  html_document:
+    toc: yes
+  github_document:
+    toc: yes
+---
+
+### 1. Executive Summary
+
+* In this document, team "Morton Arboretum" has analyzed the dataset  and developed plots on the Oak Tree Phenology Data Set, for the year 2017. Going forwards, our team will work and provide more insights on the dataset by analyzing the trends.
+
+### 2. Data cleaning on 2017 Dataset
+
+* Read the CSV File into a dataframe
+
+    * Set up the Working Directory
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE} 
+knitr::opts_chunk$set(cache=TRUE)
+knitr::opts_knit$set(root.dir = "F:/Data to Decisions") 
+```
+
+    * Perfrom the Data Cleaning like last time
+
+```{r read data}
+plotdata = read.csv("plotdata.csv", header = TRUE, stringsAsFactors = FALSE)
+```
+na.exclude(plotdata)
+
+```{r plot}
+View(plotdata)
+```
+
+```{r Cleanup}
+plotdata$leaf_breaking_bud_intensity[plotdata$leaf_breaking_bud_intensity == "10-Mar"] <- "03-10"
+plotdata$flower_buds_intensity[plotdata$flower_buds_intensity == "10-Mar"] <- "03-10"
+plotdata$fruit_intensity[plotdata$fruit_intensity == "10-Mar"] <- "03-10"
+plotdata$fruit_drop_intensity[plotdata$fruit_drop_intensity == "10-Mar"] <- "03-10"
+plotdata$flower_buds_intensity[plotdata$flower_buds_intensity == "43169.00"] <- "03-10"
+plotdata[plotdata == ""] <- "0"
+plotdata$leaf_increasing_size_intensity[plotdata$leaf_increasing_size_intensity == "0"] <- "1"
+
+```
+
+Run the below command to get insight onto the data
+```{r}
+str(plotdata)
+```
+
+Import the dplyr library
+
+```{r import dblyr package}
+library(dplyr)
+```
+
+### 3. Perform the below steps
+
+```{r Perform the below instructions}
+deletedata <- select(plotdata, -X.1, -X)
+deletedata$leaf_increasing_size_intensity[deletedata$leaf_increasing_size_intensity == "0"] <- as.numeric("1")
+deletedata$leaf_increasing_size_intensity[deletedata$leaf_increasing_size_intensity == "5-24%"] <- as.numeric("2")
+deletedata$leaf_increasing_size_intensity[deletedata$leaf_increasing_size_intensity == "<25%"] <- as.numeric("2")
+deletedata$leaf_increasing_size_intensity[deletedata$leaf_increasing_size_intensity == "25-49%"] <- "3"
+deletedata$leaf_increasing_size_intensity[deletedata$leaf_increasing_size_intensity == "25-49"] <- "3"
+deletedata$leaf_increasing_size_intensity[deletedata$leaf_increasing_size_intensity == "50-74%"] <- "4"
+deletedata$leaf_increasing_size_intensity[deletedata$leaf_increasing_size_intensity == "50-74% "] <- "4"
+deletedata$leaf_increasing_size_intensity[deletedata$leaf_increasing_size_intensity == "75-94%"] <- "5"
+deletedata$leaf_increasing_size_intensity[deletedata$leaf_increasing_size_intensity == ">95%"] <- "6"
+is.character(deletedata$leaf_increasing_size_intensity)
+list(deletedata$leaf_increasing_size_intensity)
+
+```
+
+### 4. Plots
+
+* We developed plots to identify the following
+
+    * Leaf Size for all species
+
+#### Plot 1: Size of the leaves filtered by month for all species
+```{r first plot}
+#normalplot for leaf_increasing_size_intensity based on month
+#plot(deletedata$leaf_increasing_size_intensity ~ deletedata$month)
+plot(deletedata$leaf_increasing_size_intensity ~ deletedata$month,main="Leaf size analysis",xlab="month",ylab="leaf size intensity")
+```
+
+
+#### Plot 2: Size of the leaves filtered by month for species Palustris
+```{r second plot}
+#subsetting and plotting again based on month
+palustris_subset <- subset(deletedata, species=="palustris")
+#plot(palustris_subset$leaf_increasing_size_intensity ~ palustris_subset$month)
+plot(palustris_subset$leaf_increasing_size_intensity ~ palustris_subset$month,main="Leaf size analysis for palustris",xlab="month",ylab="leaf size intensity")
+```
+
+#### Plot 3: Size of the leaves filtered by month for species Velutina
+
+```{r}
+velutina_subset <- subset(deletedata, species=="velutina")
+#plot(velutina_subset$leaf_increasing_size_intensity ~ velutina_subset$month)
+plot(velutina_subset$leaf_increasing_size_intensity ~ velutina_subset$month,main="Leaf size analysis for velutina",xlab="month",ylab="leaf size intensity")
+```
