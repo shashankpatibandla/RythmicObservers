@@ -1,0 +1,11 @@
+base
+rpart
+lattice
+RevoScaleR
+mrsdeploy
+MicrosoftML
+RevoMods
+RevoUtils
+RevoUtilsMath
+dplyr
+ggplot2
