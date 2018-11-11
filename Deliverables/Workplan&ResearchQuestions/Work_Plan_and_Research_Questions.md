@@ -9,11 +9,10 @@
 5. Is there any **difference in a number of buds, flowers, and fruits** in __2017 vs 2018__? 
 6. How does **budding correlate with flowering/leafing**?
 7. How does **leaf falling correlates with weather/climate**?
-8. Does the **time of budding** impact the leafing and flowering time?
+8. Does the **time of budding** impact the flowering and Fruits time?
 
-##### **Background Research** 
-Areas:- 
-_Shashank_ (Weather data over the area for 17-18 years), 
+##### **Background Research** s:- and 
+_Shas hank_ (Weather data over the area for 17-18 years), 
 _Goutam_ (Soil conditions, study about oak trees), 
 _Sujana_ (General background about Mortom Arboretum)
 
