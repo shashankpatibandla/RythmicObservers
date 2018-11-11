@@ -112,6 +112,14 @@ is.character(deletedata$leaf_increasing_size_intensity)
 
 #### Plot 1: Size of the leaves filtered by month for all species
 
+    * Our main agenda in here is to understand how each Oak Tree species respond to the climatic conditions over time. To do that, we wanted to break down all the species based  on the following.
+      
+        * Leaves
+        * Flower
+        * Fruit
+
+    * We will have to observe how leaves, flower and fruits of all the species respond to the climate. For this assignment and in this plot, we are going to observe how the leaves of all species respond to the climate over a period of an year.        
+
 ``` r
 #normalplot for leaf_increasing_size_intensity based on month
 #plot(deletedata$leaf_increasing_size_intensity ~ deletedata$month)
@@ -120,7 +128,11 @@ plot(deletedata$leaf_increasing_size_intensity ~ deletedata$month,main="Leaf siz
 
 ![](RPlots_Oak_Trees_files/figure-markdown_github/first%20plot-1.png)
 
+    * We identified that the leaves of all the species has seen its maximum size between the months 5 and 7.  
+
 #### Plot 2: Size of the leaves filtered by month for species Palustris
+
+    * Here, we are picking out a specific species to understand how its leaves respond to the climate 
 
 ``` r
 #subsetting and plotting again based on month
@@ -145,7 +157,9 @@ plot(velutina_subset$leaf_increasing_size_intensity ~ velutina_subset$month,main
 
 #### Using ggplot library to plot the same and the results answer our research question 2.
 
-    * Step 1. Prepare the data
+-   Research Question: Find out when Leaf size is maximum or minimum for different species throughout the year and what other data corelates with it.
+
+    -   Step 1. Prepare the data
 
 ``` r
 #using ggplot
@@ -195,7 +209,7 @@ fig0
     library(gridExtra)
     grid.arrange(fig,fig0,fig4,nrow=3)
 
-#### Plots for leaf breaking observed, flower breaking observed and Fruit breaking observed versus Months in 2017 specifically for rubra species. This answers the research question number 8.
+#### Plots for leaf breaking observed, flower breaking observed and Fruit breaking observed versus Months in 2017 specifically for rubra species. This answers the research question number 8 which is "Does the time of budding impact the leafing and flowering time?".
 
     * Plot
 
@@ -234,11 +248,32 @@ fig3
 
 ![](RPlots_Oak_Trees_files/figure-markdown_github/final%20plot-3.png)
 
-### 6. Conclusion
+### 7. Grid Extra Overview
+
+#### This will give an overview all the budding related phenophases during an year for a specific specie.
+
+``` r
+library(gridExtra)
+```
+
+    ## 
+    ## Attaching package: 'gridExtra'
+
+    ## The following object is masked from 'package:dplyr':
+    ## 
+    ##     combine
+
+``` r
+grid.arrange(fig1,fig2,fig3,nrow=3)
+```
+
+![](RPlots_Oak_Trees_files/figure-markdown_github/grid%20arrange-1.png)
+
+### 8. Conclusion
 
 In the coming week, our team will work on adding the weather data and developing plots to provide insightful visualizations.
 
-### 7. Contributorship Statement
+### 9. Contributorship Statement
 
 -   Goutham - RMarkdown document, RHTML, Verify the Plots, Push to Git
 -   Shashank and Sujana - Developed R Plots
