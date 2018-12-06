@@ -9,7 +9,7 @@
 
 
 ##### **Background Research** s:- and 
-_Shas hank_ (Weather data over the area for 17-18 years), 
+_Shashank_ (Weather data over the area for 17-18 years), 
 _Goutam_ (Soil conditions, study about oak trees), 
 _Sujana_ (General background about Mortom Arboretum)
 
@@ -63,5 +63,12 @@ _09/10/2018 – 11/21/2018_
 2. Climatic observation
 3. Soil Conditions
 
+
+#### A contributorship statement.
+Sujana - Worked on General background about Morton Arboretum
+Goutam - Worked on Soil conditions, study about oak trees
+Shashank - Worked on Weather data over the area for 17-18 years 
+
+Proofread by - Shashank Patibandla on 09/11/2018
 
 Please click **[here](https://github.com/shashankpatibandla/RythmicObservers/blob/master/LICENSE)** for the GPL LICENCE Information 
