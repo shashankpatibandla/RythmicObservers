@@ -1,6 +1,6 @@
 # RythmicObservers
 
-### This Repository contains the analysis we have done on the morton arboretum data
+### This Repository contains the analysis we have done on the morton arboretum data. All the analysis and supporting documents can be found in the directories below
 
 ##### Please Find the Workplan for the Project [here](https://github.com/shashankpatibandla/RythmicObservers/tree/master/Deliverables/Workplan%26ResearchQuestions)
 
