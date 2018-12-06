@@ -18,3 +18,8 @@
   3. Sujana Panta
 
 Please click [here](https://github.com/shashankpatibandla/RythmicObservers/blob/master/LICENSE) for the LICENCE Information 
+
+**Sign-off**
+Shashank Patibandla - 12/04/2018
+Goutam Viswanathan  - 12/04/2018
+Sujana Panta        - 12/04/2018
