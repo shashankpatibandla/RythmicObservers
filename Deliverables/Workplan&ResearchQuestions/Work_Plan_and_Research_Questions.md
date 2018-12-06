@@ -65,9 +65,9 @@ _09/10/2018 – 11/21/2018_
 
 
 #### A contributorship statement.
-Sujana - Worked on General background about Morton Arboretum
-Goutam - Worked on Soil conditions, study about oak trees
-Shashank - Worked on Weather data over the area for 17-18 years 
+Sujana - Worked on General background about Morton Arboretum  
+Goutam - Worked on Soil conditions, study about oak trees  
+Shashank - Worked on Weather data over the area for 17-18 years   
 
 Proofread by - Shashank Patibandla on 09/11/2018
 
