@@ -8,11 +8,9 @@
 
 ##### Please Find the Data Cleaning Documentation for the Project [here](https://github.com/shashankpatibandla/RythmicObservers/tree/master/Deliverables/DataCleaningDocumentation)
 
-##### Please Find the R Scripts for the Project [here]
-https://github.com/shashankpatibandla/RythmicObservers/tree/master/Deliverables/R%20Script
+##### Please Find the R Scripts for the Project [here](https://github.com/shashankpatibandla/RythmicObservers/tree/master/Deliverables/R%20Script)
 
-##### Please Find the Visualizations for the Project [here]
-https://github.com/shashankpatibandla/RythmicObservers/tree/master/Deliverables/R%20Plots
+##### Please Find the Visualizations for the Project [here](https://github.com/shashankpatibandla/RythmicObservers/tree/master/Deliverables/R%20Plots)
 
 ### Authors
   1. Shashank Patibandla
