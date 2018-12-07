@@ -1,4 +1,4 @@
-**# Rythmic Observers - Final Git Repository Directory**
+# **Rythmic Observers - Final Git Repository Directory**
 
 This Directory contains all the final polished deliverables regarding the Mortem Arboretum project. 
 
