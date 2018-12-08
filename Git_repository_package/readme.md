@@ -29,7 +29,7 @@ This Directory contains all the final polished deliverables regarding the Mortem
 
 **5. Presentation**
 * This is a PDF file which contains our final presentation on the project
-* You can click [here]() to view it
+* You can click [here](https://github.com/shashankpatibandla/RythmicObservers/blob/master/Git_repository_package/Morton%20Arboretum%20-%20Rhythmic%20Observers.pdf) to view it
 
 **6. Overall Contributorship**
 * This gives a overview of who worked on which parts of the project
