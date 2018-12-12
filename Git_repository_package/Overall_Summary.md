@@ -19,7 +19,7 @@ This document gives an overview of the project carried out by our team in order 
 
 ### Target audience
 
--   Our target audience is Mortem Arboretum and Dr. Christy Rollinson who work to improve how oak trees are effected by weather. As the oak trees in Mortem Arboretum are from various locations, they are interested in know when each phenophase occurs in different species and how the phenophases are interlinked.
+-   Our target audience is Mortem Arboretum and Dr. Christine Rollinson who work to improve how oak trees are effected by weather. As the oak trees in Mortem Arboretum are from various locations, they are interested in know when each phenophase occurs in different species and how the phenophases are interlinked.
 
 -   The main focus of Mortem Arboretum is the health and improvements of the trees. They conduct scientific research for tree care and prevention.
 
