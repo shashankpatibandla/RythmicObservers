@@ -1,11 +1,11 @@
 ## Team: Rhythmic Observers
  
 ## Individual 
-#### Name - Dr. Christy Rollinson 
+#### Name - Dr. Christine Rollinson 
 #### Organization - Morton Arboretum
 
 #### Role & responsibilities
-Dr. Christy Rollinson is a Forest Ecologist at Morton Arboretum. 
+Dr. Christine Rollinson is a Forest Ecologist at Morton Arboretum. 
  
 #### Job experience
 Dr. Rollinson started working at the Arboretum as a forest ecologist from Jan 2017. Before that, she was a postdoctoral researcher at Boston University. 
