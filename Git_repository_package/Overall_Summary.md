@@ -15,7 +15,7 @@ Shashank Patibandla
 Summary of Work on Morton Arboretum Project
 ===========================================
 
-This document gives an overview of the project carried out by our team in order to derive decisions from the data given by morten arboretum.
+This document gives an overview of the project carried out by our team in order to derive decisions from the data given by Morton Arboretum.
 
 ### Target audience
 
