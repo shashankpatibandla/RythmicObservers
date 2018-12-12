@@ -3,7 +3,7 @@ Overall Summary
 Shashank Patibandla
 2018-12-06
 
--   [Summary of Work on Morten Arboretum Project](#summary-of-work-on-morten-arboretum-project)
+-   [Summary of Work on Morton Arboretum Project](#summary-of-work-on-Morton-arboretum-project)
     -   [Target audience](#target-audience)
     -   [Decisions our analyisis targets](#decisions-our-analyisis-targets)
     -   [Brief description of the Data source (Dataset)](#brief-description-of-the-data-source-dataset)
@@ -12,28 +12,28 @@ Shashank Patibandla
     -   [Decisions which can be derived from our analysis and plots](#decisions-which-can-be-derived-from-our-analysis-and-plots)
     -   [References](#references)
 
-Summary of Work on Morten Arboretum Project
+Summary of Work on Morton Arboretum Project
 ===========================================
 
 This document gives an overview of the project carried out by our team in order to derive decisions from the data given by morten arboretum.
 
 ### Target audience
 
--   Our target audience is Morten Arboretum and Dr. Christine Rollinson who work to improve how oak trees are effected by weather. As the oak trees in Mortem Arboretum are from various locations, they are interested in know when each phenophase occurs in different species and how the phenophases are interlinked.
+-   Our target audience is Morton Arboretum and Dr. Christine Rollinson who work to improve how oak trees are effected by weather. As the oak trees in Morton Arboretum are from various locations, they are interested in know when each phenophase occurs in different species and how the phenophases are interlinked.
 
--   The main focus of Morten Arboretum is the health and improvements of the trees. They conduct scientific research for tree care and prevention.
+-   The main focus of Morton Arboretum is the health and improvements of the trees. They conduct scientific research for tree care and prevention.
 
-**Mission and goals of Morten Arboretum**
+**Mission and goals of Morton Arboretum**
 
 "The mission of The Morton Arboretum is "to collect and study trees, shrubs, and other plants from around the world, to display them across naturally beautiful landscapes for people to study and enjoy, and to learn how to grow them in ways that enhance our environment. The goal is to encourage the planting and conservation of trees and other plants for a greener, healthier, and more beautiful world"
 
 ### Decisions our analyisis targets
 
--   Some of our research questions target to get results that Morten Arboretum are interested in, like how the leaf budding time is effecting the other phonephases. Also if the no. of fruits observed are fully growing to a ripe fruit or are the fruit buds dropping even before they ripen. This helps mortem arboretum understand if any factor is influencing the ripening of the fruit.
+-   Some of our research questions target to get results that Morton Arboretum are interested in, like how the leaf budding time is effecting the other phonephases. Also if the no. of fruits observed are fully growing to a ripe fruit or are the fruit buds dropping even before they ripen. This helps Morton Arboretum understand if any factor is influencing the ripening of the fruit.
 
 -   Also, we have given a overview of how many records are their for each year and if the no. of species have gone up. This gives a nice overview of the data.
 
--   We also tried to determine if the number of budding phenophase was observed more in 2017 vs 2018. This in-turn will help morten arboretum to determine this change was due to some significant change.
+-   We also tried to determine if the number of budding phenophase was observed more in 2017 vs 2018. This in-turn will help Morton Arboretum to determine this change was due to some significant change.
 
 1.  All Species, categorized by year, Total records?
 2.  In which year (2017 vs 2018) there was the highest number of buds?
@@ -52,7 +52,7 @@ This document gives an overview of the project carried out by our team in order 
 
 ### Brief description of the Data source (Dataset)
 
--   The dataset was given by Mortem Arboretum to analysis phenophase patterns in oak tress. It contains of two datasets, one for each year. The datasets contain all most the same variables expect for 2-3 extra variables in 2018. The dataset has around 40 species of oak trees which are originally from different countries.
+-   The dataset was given by Morton Arboretum to analysis phenophase patterns in oak tress. It contains of two datasets, one for each year. The datasets contain all most the same variables expect for 2-3 extra variables in 2018. The dataset has around 40 species of oak trees which are originally from different countries.
 
 -   The 2017 data has around 9 months of data which spans accross all the species. Every phenophase has a observed variable and a intensity variable, which tells us if the observer was able to distinctly observe any of the phenophase and how much of the phenophase was visible using the intensity value. The data was mostly clean, but, their were a lot of observers data entry issues which had to be cleaned using various methods in data cleaning process
 
